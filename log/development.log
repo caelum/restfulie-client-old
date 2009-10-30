@@ -933,3 +933,54 @@ ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" wit
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 15:05:46) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+Completed in 59ms (View: 58, DB: 0) | 200 OK [http://localhost/commands/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 15:05:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 15:09:25) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/commands/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 15:09:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:09:39) [POST]
+  Parameters: {"command_1"=>"refresh", "command_2"=>"refresh", "commit"=>"execute", "command_3"=>"refresh", "authenticity_token"=>"yzYaU4S+K+jyV8JIechvMDLLLwoCh7g/Dn+ZImxWUvg=", "url"=>"http://localhost:3000/orders/13.xml", "command_4"=>"refresh", "command_5"=>"refresh"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mOrder Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+
+NoMethodError (undefined method `from_xml' for #<Class:0x248c090>):
+  app/controllers/commands_controller.rb:8:in `execute'
+
+Rendered rescues/_trace (28.4ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
