@@ -1,0 +1,30 @@
+<ol>
+	<li><h2>And here is the result</h2>
+
+<p>
+	Base url: <%= @from_url%>
+</p>
+
+<p>
+	Response code: <%= @response.code %>
+</p>
+
+<p>
+	Response body:
+	<pre><%= h @response.body %></pre>
+	</p>
+</li>
+
+	<li><h2>Execute something</h2>
+		<p>Fill in the url field and choose an action to execute with your resource.</p>
+	</li>
+</ol>
+
+<% form_tag "/commands/execute" do %>
+	url: <%= text_field_tag 'url', @from_url %>
+	<br/>
+  commands:<br/> 
+	<%= select_tag "command", "<option>refresh</option><option>update</option><option>pay</option><option>destroy</option>" %>
+	
+	<%= submit_tag 'execute' %>
+<% end %>

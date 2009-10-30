@@ -32,7 +32,6 @@ module Restfulie
     self.class.send(:define_method, name, &block)
   end
 
-
 end
 
 module ActiveRecord
@@ -40,6 +39,7 @@ module ActiveRecord
 
     include Restfulie
     attr_accessor :_possible_states
+    attr_accessor :_came_from
 
     def self.add_states(result, states)
       result._possible_states = {}
@@ -57,18 +57,32 @@ module ActiveRecord
       states.each do |state|
         name = state["rel"]
         result.create_method(name){ |options|
+          
           options = {} if options.nil?
           url = URI.parse(state["href"])
-          if ['destroy','delete','cancel'].include? name
-            method_name = "delete"
+          
+          # gs: i dont know how to meta play here! i suck
+          if options[:method]=="delete"
+            req = Net::HTTP::Delete.new(url.path)
+          elsif options[:method]=="put"
+            req = Net::HTTP::Put.new(url.path)
+          elsif options[:method]=="get"
+            req = Net::HTTP::Get.new(url.path)
+          elsif options[:method]=="post"
+            req = Net::HTTP::Post.new(url.path)
+          elsif ['destroy','delete','cancel'].include? name
+            req = Net::HTTP::Delete.new(url.path)
           elsif ['refresh', 'reload'].include? name
-            method_name = "get"
+            req = Net::HTTP::Get.new(url.path)
           else
-            method_name = "post"
+            req = Net::HTTP::Post.new(url.path)
           end
-          method_name = options[:method] if options[:method]
-          res = Net::HTTP.send(method_name, url)
-          return res
+          
+          req.add_field("Accept", "text/xml") if result._came_from == :xml
+
+          http = Net::HTTP.new(url.host, url.port)
+          http.request(req)
+          
         }
       end
       
@@ -113,7 +127,9 @@ module ActiveRecord
     # but the hash has no counterpart (e.g. 'ship_to' => {} )
     def self.from_xml( xml )
       hash = Hash.from_xml xml
-      self.from_hash hash[self.to_s.underscore]
+      result = self.from_hash hash[self.to_s.underscore]
+      result._came_from = :xml
+      result
     end
 
     # end of code based on Matt Pulver's
