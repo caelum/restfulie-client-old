@@ -1,14 +1,11 @@
 <ol>
 	<li><h2>Execute something</h2>
-		<p>Fill in the url field and choose an action to execute with your resource.</p>
+		<p>Fill in the url field.</p>
+		<p>
+			<% form_tag "/commands/show_rels" do %>
+				url: <%= text_field_tag 'url' %>
+				<%= submit_tag 'view available actions' %>
+			<% end %>
+		</p>
 	</li>
 </ol>
-
-<% form_tag "/commands/execute" do %>
-	url: <%= text_field_tag 'url' %>
-	<br/>
-  commands:<br/> 
-	<%= select_tag "command", "<option>refresh</option><option>update</option><option>pay</option><option>destroy</option>" %>
-	
-	<%= submit_tag 'execute' %>
-<% end %>

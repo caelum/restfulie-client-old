@@ -1,0 +1,17 @@
+<ol>
+	<li><h2>Execute something</h2>
+		<p>Choose an action.</p>
+		<p>
+			<% form_tag "/commands/execute" do %>
+				<%= hidden_field_tag 'url', @from_url %>
+				commands: 
+				<select name="command">
+					<% @possible_states.each do |state| %>
+						<option value=<%= state %> ><%= state %></option>
+					<% end %>
+				</select>
+				<%= submit_tag 'execute' %>
+			<% end %>
+		</p>
+	</li>
+</ol>

@@ -1959,3 +1959,1569 @@ ActionView::TemplateError (undefined method `code' for #<Order:0x242c7bc>) on li
 Rendered rescues/_trace (91.5ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#welcome (for 127.0.0.1 at 2009-10-30 18:08:55) [GET]
+Rendering template within layouts/application
+Rendering welcome/welcome
+Completed in 24ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 18:08:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 18:08:57) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/commands/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 18:08:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 18:09:03) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/2.xml"}
+  [4;36;1mOrder Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 241ms (View: 7, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 18:09:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 18:09:13) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"destroy", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/2.xml"}
+  [4;35;1mOrder Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 96ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 18:09:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 18:11:26) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 64ms (View: 4, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 18:11:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 18:12:26) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+
+NoMethodError (undefined method `from_xml' for Object:Class):
+  app/controllers/commands_controller.rb:9:in `execute'
+
+Rendered rescues/_trace (33.8ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 18:23:41) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (21.1ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 89ms (View: 3, DB: 21) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 18:23:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 18:23:54) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 60ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 18:23:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 18:25:49) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+
+NoMethodError (undefined method `links' for #<Order:0x10328b1e0>):
+  app/controllers/commands_controller.rb:11:in `execute'
+
+Rendered rescues/_trace (106.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 18:29:03) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 61ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 18:29:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 18:34:11) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/commands/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 18:34:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 18:34:19) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/commands/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 18:34:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 18:56:40) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+
+ActionView::TemplateError (index 32953 out of string) on line #7 of app/views/commands/new.html.erb:
+4: 	</li>
+5: </ol>
+6: 
+7: <% form_remote_tag "/commands/show_rels" do %>
+8: 	url: <%= text_field_tag 'url' %>
+9: 	<%= submit_tag 'view available actions' %>
+10: <% end %>
+
+    app/views/commands/new.html.erb:7
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 18:57:08) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/commands/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 18:57:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 18:57:20) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/commands/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 18:57:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 18:57:31) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+
+ActionView::TemplateError (can't convert String into Integer) on line #4 of app/views/commands/show_rels.html.erb:
+1: <% form_tag "/commands/execute" do %>
+2: 	<%= hidden_field_tag 'url', @from_url %>
+3: 	commands: 
+4: 	<%= select("command", "rel", @possible_states.collect {|p| [ p["rel"], p["rel"] ] }) %>
+5: 	<br/>
+6: 	<%= submit_tag 'view available actions' %>
+7: <% end %>
+
+    app/views/commands/show_rels.html.erb:4:in `[]'
+    app/views/commands/show_rels.html.erb:4
+    app/views/commands/show_rels.html.erb:4:in `each'
+    app/views/commands/show_rels.html.erb:4:in `collect'
+    app/views/commands/show_rels.html.erb:4
+    app/views/commands/show_rels.html.erb:1
+
+Rendered rescues/_trace (46.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 18:59:56) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+
+ActionView::TemplateError (can't convert String into Integer) on line #4 of app/views/commands/show_rels.html.erb:
+1: <% form_tag "/commands/execute" do %>
+2: 	<%= hidden_field_tag 'url', @from_url %>
+3: 	commands: 
+4: 	<%= select("command", "rel", @possible_states.collect {|p| [ p["rel"], p["rel"] ] }) %>
+5: 	<select name="command">
+6: 	<% @possible_states.each do |state| %>
+7: 	<option value=<%= state.rel%> ><%= state.rel%></option>
+
+    app/views/commands/show_rels.html.erb:4:in `[]'
+    app/views/commands/show_rels.html.erb:4
+    app/views/commands/show_rels.html.erb:4:in `each'
+    app/views/commands/show_rels.html.erb:4:in `collect'
+    app/views/commands/show_rels.html.erb:4
+    app/views/commands/show_rels.html.erb:1
+
+Rendered rescues/_trace (116.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:00:05) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+
+ActionView::TemplateError (undefined method `rel' for #<Array:0x103470eb0>) on line #6 of app/views/commands/show_rels.html.erb:
+3: 	commands: 
+4: 	<select name="command">
+5: 	<% @possible_states.each do |state| %>
+6: 	<option value=<%= state.rel%> ><%= state.rel%></option>
+7: 	<% end %>
+8: 	</select>
+9: 	<br/>
+
+    app/views/commands/show_rels.html.erb:6
+    app/views/commands/show_rels.html.erb:5:in `each'
+    app/views/commands/show_rels.html.erb:5
+    app/views/commands/show_rels.html.erb:1
+
+Rendered rescues/_trace (43.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:00:25) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+
+ActionView::TemplateError (can't convert String into Integer) on line #6 of app/views/commands/show_rels.html.erb:
+3: 	commands: 
+4: 	<select name="command">
+5: 	<% @possible_states.each do |state| %>
+6: 	<option value=<%= state['rel']%> ><%= state['rel'] %></option>
+7: 	<% end %>
+8: 	</select>
+9: 	<br/>
+
+    app/views/commands/show_rels.html.erb:6:in `[]'
+    app/views/commands/show_rels.html.erb:6
+    app/views/commands/show_rels.html.erb:5:in `each'
+    app/views/commands/show_rels.html.erb:5
+    app/views/commands/show_rels.html.erb:1
+
+Rendered rescues/_trace (46.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:01:20) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+
+ActionView::TemplateError (can't convert String into Integer) on line #6 of app/views/commands/show_rels.html.erb:
+3: 	commands: 
+4: 	<select name="command">
+5: 	<% @possible_states.each do |state| %>
+6: 	<option value=<%= state['rel']%> ><%= state['rel'] %></option>
+7: 	<% end %>
+8: 	</select>
+9: 	<br/>
+
+    app/views/commands/show_rels.html.erb:6:in `[]'
+    app/views/commands/show_rels.html.erb:6
+    app/views/commands/show_rels.html.erb:5:in `each'
+    app/views/commands/show_rels.html.erb:5
+    app/views/commands/show_rels.html.erb:1
+
+Rendered rescues/_trace (44.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:02:05) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+
+ActionView::TemplateError (can't convert String into Integer) on line #6 of app/views/commands/show_rels.html.erb:
+3: 	commands: 
+4: 	<select name="command">
+5: 	<% @possible_states.each do |state| %>
+6: 	<option value=<%= state['rel']%> ><%= state['rel'] %></option>
+7: 	<% end %>
+8: 	</select>
+9: 	<br/>
+
+    app/views/commands/show_rels.html.erb:6:in `[]'
+    app/views/commands/show_rels.html.erb:6
+    app/views/commands/show_rels.html.erb:5:in `each'
+    app/views/commands/show_rels.html.erb:5
+    app/views/commands/show_rels.html.erb:1
+
+Rendered rescues/_trace (118.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:02:32) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+Completed in 41ms (View: 7, DB: 2) | 200 OK [http://localhost/commands/show_rels]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:02:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:03:41) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+Completed in 42ms (View: 6, DB: 2) | 200 OK [http://localhost/commands/show_rels]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:03:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:03:44) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 60ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:03:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:04:34) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 61ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:04:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 19:04:38) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/commands/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:04:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:05:17) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+Completed in 37ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/show_rels]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:05:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:05:21) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"destroy", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 66ms (View: 6, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:05:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:05:25) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+Completed in 36ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/show_rels]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:05:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:05:27) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 58ms (View: 3, DB: 3) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:05:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:06:29) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+Completed in 36ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/show_rels]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:06:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:07:31) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 126ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:07:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:07:35) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+Completed in 36ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/show_rels]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:07:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 19:07:44) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+
+ActionView::TemplateError (wrong number of arguments (2 for 1)) on line #7 of app/views/commands/new.html.erb:
+4: 	</li>
+5: </ol>
+6: 
+7: <% form_remote_tag "/commands/show_rels", :update => "commands" do %>
+8: 	url: <%= text_field_tag 'url' %>
+9: 	<%= submit_tag 'view available actions' %>
+10: <% end %>
+
+    app/views/commands/new.html.erb:7:in `form_remote_tag'
+    app/views/commands/new.html.erb:7
+
+Rendered rescues/_trace (40.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:08:47) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 90ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:08:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:09:35) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 59ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:09:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 19:09:38) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+ERROR: compiling _run_erb_app47views47commands47new46html46erb RAISED compile error
+/Users/caue/Documents/workspace/restfulie-client/app/views/commands/new.html.erb:7: syntax error, unexpected ')'
+...s", :update => "commands" do ).to_s); @output_buffer.concat ...
+                              ^
+/Users/caue/Documents/workspace/restfulie-client/app/views/commands/new.html.erb:15: syntax error, unexpected kENSURE, expecting ')'
+/Users/caue/Documents/workspace/restfulie-client/app/views/commands/new.html.erb:17: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47commands47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<ol>\n\t<li><h2>Execute something</h2>\n\t\t<p>Fill in the url field and choose an action to execute with your resource.</p>\n\t</li>\n</ol>\n\n"
+
+
+
+
+
+; @output_buffer.concat(( form_remote_tag "/commands/show_rels", :update => "commands" do ).to_s); @output_buffer.concat "\n\turl: "
+; @output_buffer.concat(( text_field_tag 'url' ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat(( submit_tag 'view available actions' ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n\n<div id=\"commands\">\n\t\n</div>"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/caue/Documents/workspace/restfulie-client/app/views/commands/new.html.erb:17:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/caue/Documents/workspace/restfulie-client/app/views/commands/new.html.erb:7: syntax error, unexpected ')'
+...s", :update => "commands" do ).to_s); @output_buffer.concat ...
+                              ^
+/Users/caue/Documents/workspace/restfulie-client/app/views/commands/new.html.erb:15: syntax error, unexpected kENSURE, expecting ')'
+/Users/caue/Documents/workspace/restfulie-client/app/views/commands/new.html.erb:17: syntax error, unexpected kEND, expecting ')') on line #7 of app/views/commands/new.html.erb:
+4: 	</li>
+5: </ol>
+6: 
+7: <%= form_remote_tag "/commands/show_rels", :update => "commands" do %>
+8: 	url: <%= text_field_tag 'url' %>
+9: 	<%= submit_tag 'view available actions' %>
+10: <% end %>
+
+    app/views/commands/new.html.erb:17:in `compile!'
+
+Rendered rescues/_trace (37.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 19:09:40) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+
+ActionView::TemplateError (wrong number of arguments (2 for 1)) on line #7 of app/views/commands/new.html.erb:
+4: 	</li>
+5: </ol>
+6: 
+7: <% form_remote_tag "/commands/show_rels", :update => "commands" do %>
+8: 	url: <%= text_field_tag 'url' %>
+9: 	<%= submit_tag 'view available actions' %>
+10: <% end %>
+
+    app/views/commands/new.html.erb:7:in `form_remote_tag'
+    app/views/commands/new.html.erb:7
+
+Rendered rescues/_trace (111.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 19:09:44) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+
+ActionView::TemplateError (wrong number of arguments (2 for 1)) on line #7 of app/views/commands/new.html.erb:
+4: 	</li>
+5: </ol>
+6: 
+7: <% form_remote_tag "/commands/show_rels", :update => "commands" do %>
+8: 	url: <%= text_field_tag 'url' %>
+9: 	<%= submit_tag 'view available actions' %>
+10: <% end %>
+
+    app/views/commands/new.html.erb:7:in `form_remote_tag'
+    app/views/commands/new.html.erb:7
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 19:09:58) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+
+ActionView::TemplateError (index 32953 out of string) on line #7 of app/views/commands/new.html.erb:
+4: 	</li>
+5: </ol>
+6: 
+7: <% form_remote_tag "/commands/show_rels" do %>
+8: 	url: <%= text_field_tag 'url' %>
+9: 	<%= submit_tag 'view available actions' %>
+10: <% end %>
+
+    app/views/commands/new.html.erb:7
+
+Rendered rescues/_trace (117.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 19:13:00) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+
+ActionView::TemplateError (index 32953 out of string) on line #7 of app/views/commands/new.html.erb:
+4: 	</li>
+5: </ol>
+6: 
+7: <% form_remote_tag "/commands/show_rels" do %>
+8: 	url: <%= text_field_tag 'url' %>
+9: 	<%= submit_tag 'view available actions' %>
+10: <% end %>
+
+    app/views/commands/new.html.erb:7
+
+Rendered rescues/_trace (39.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 19:13:01) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+
+ActionView::TemplateError (index 32953 out of string) on line #7 of app/views/commands/new.html.erb:
+4: 	</li>
+5: </ol>
+6: 
+7: <% form_remote_tag "/commands/show_rels" do %>
+8: 	url: <%= text_field_tag 'url' %>
+9: 	<%= submit_tag 'view available actions' %>
+10: <% end %>
+
+    app/views/commands/new.html.erb:7
+
+Rendered rescues/_trace (110.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 19:13:04) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/commands/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:13:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#new (for 127.0.0.1 at 2009-10-30 19:13:09) [GET]
+Rendering template within layouts/application
+Rendering commands/new
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/commands/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:13:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:13:15) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+Completed in 36ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/show_rels]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:13:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:13:18) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 122ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:13:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:13:45) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+Completed in 37ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/show_rels]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:13:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:13:48) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 60ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:13:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:14:14) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #32 of app/views/commands/execute.html.erb:
+29: 	<%= hidden_field_tag 'url', @from_url %>
+30: 	commands: 
+31: 	<select name="command">
+32: 	<% @possible_states.each do |state| %>
+33: 	<option value=<%= state %> ><%= state %></option>
+34: 	<% end %>
+35: 	</select>
+
+    app/views/commands/execute.html.erb:32
+    app/views/commands/execute.html.erb:28
+
+Rendered rescues/_trace (108.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:14:42) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 123ms (View: 4, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:14:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:15:05) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 110ms (View: 9, DB: 4) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:15:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:15:10) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 61ms (View: 4, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:15:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:15:24) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 62ms (View: 4, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:15:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:17:59) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;35;1mOrder Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 128ms (View: 8, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:17:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:18:04) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/1.xml"}
+  [4;36;1mOrder Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 73ms (View: 4, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:18:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:18:14) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/3.xml"}
+  [4;35;1mOrder Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+Completed in 40ms (View: 6, DB: 2) | 200 OK [http://localhost/commands/show_rels]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:18:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:18:18) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/3.xml"}
+  [4;36;1mOrder Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 126ms (View: 4, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:18:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:18:21) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"destroy", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/3.xml"}
+  [4;35;1mOrder Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 66ms (View: 4, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:18:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:18:28) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"destroy", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/3.xml"}
+  [4;36;1mOrder Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering commands/execute
+
+ActionView::TemplateError (undefined method `code' for #<Order:0x10339b4b8>) on line #9 of app/views/commands/execute.html.erb:
+6: </p>
+7: 
+8: <p>
+9: 	Response code: <%= @response.code %>
+10: </p>
+11: 
+12: <p>
+
+    app/views/commands/execute.html.erb:9
+
+Rendered rescues/_trace (107.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:18:36) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/3.xml"}
+  [4;35;1mOrder Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 63ms (View: 4, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:18:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:19:06) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/5.xml"}
+  [4;36;1mOrder Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+Completed in 35ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/show_rels]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:19:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:19:09) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/5.xml"}
+  [4;35;1mOrder Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 125ms (View: 4, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:19:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:19:11) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"destroy", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/5.xml"}
+  [4;36;1mOrder Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 144ms (View: 71, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:19:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:20:17) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/6.xml"}
+  [4;35;1mOrder Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+Completed in 38ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/show_rels]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:20:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:20:19) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"destroy", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/6.xml"}
+  [4;36;1mOrder Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 153ms (View: 4, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:20:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#show_rels (for 127.0.0.1 at 2009-10-30 19:20:25) [POST]
+  Parameters: {"commit"=>"view available actions", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/7.xml"}
+  [4;35;1mOrder Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/show_rels
+Completed in 38ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/show_rels]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:20:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:20:29) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"refresh", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/7.xml"}
+  [4;36;1mOrder Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 153ms (View: 4, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:20:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 19:20:30) [POST]
+  Parameters: {"commit"=>"execute", "command"=>"destroy", "authenticity_token"=>"fTEc13lBD99lbpb2vjoytflhZHK6exf8hB1pm0VDVnc=", "url"=>"http://localhost:3000/orders/7.xml"}
+  [4;35;1mOrder Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/application
+Rendering commands/execute
+Completed in 89ms (View: 4, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 19:20:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
