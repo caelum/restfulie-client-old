@@ -1103,3 +1103,124 @@ Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:20:25) [PO
   [4;36;1mOrder Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
 WARNING: Can't mass-assign these protected attributes: id
 Completed in 322ms (View: 3, DB: 1) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:23:13) [POST]
+  Parameters: {"command_1"=>"refresh", "command_2"=>"refresh", "commit"=>"execute", "command_3"=>"refresh", "authenticity_token"=>"yzYaU4S+K+jyV8JIechvMDLLLwoCh7g/Dn+ZImxWUvg=", "url"=>"http://localhost:3000/orders/13.xml", "command_4"=>"refresh", "command_5"=>"refresh"}
+  [4;36;1mOrder Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Completed in 208ms (View: 3, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:23:29) [POST]
+  Parameters: {"command_1"=>"refresh", "command_2"=>"refresh", "commit"=>"execute", "command_3"=>"refresh", "authenticity_token"=>"yzYaU4S+K+jyV8JIechvMDLLLwoCh7g/Dn+ZImxWUvg=", "url"=>"http://localhost:3000/orders/13.xml", "command_4"=>"refresh", "command_5"=>"refresh"}
+  [4;35;1mOrder Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+
+NoMethodError (undefined method `body' for #<String:0x24f0504>):
+  app/controllers/commands_controller.rb:11:in `execute'
+  app/controllers/commands_controller.rb:10:in `each'
+  app/controllers/commands_controller.rb:10:in `execute'
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:24:01) [POST]
+  Parameters: {"command_1"=>"refresh", "command_2"=>"refresh", "commit"=>"execute", "command_3"=>"refresh", "authenticity_token"=>"yzYaU4S+K+jyV8JIechvMDLLLwoCh7g/Dn+ZImxWUvg=", "url"=>"http://localhost:3000/orders/13.xml", "command_4"=>"refresh", "command_5"=>"refresh"}
+  [4;36;1mOrder Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Completed in 255ms (View: 1, DB: 1) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 15:24:02) [GET]
+  Parameters: {"1256755981"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:24:37) [POST]
+  Parameters: {"command_1"=>"refresh", "command_2"=>"refresh", "commit"=>"execute", "command_3"=>"refresh", "authenticity_token"=>"yzYaU4S+K+jyV8JIechvMDLLLwoCh7g/Dn+ZImxWUvg=", "url"=>"http://localhost:3000/orders/13.xml", "command_4"=>"refresh", "command_5"=>"refresh"}
+  [4;35;1mOrder Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+
+NoMethodError (undefined method `body' for #<String:0x25e0568>):
+  app/controllers/commands_controller.rb:14:in `execute'
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:24:45) [POST]
+  Parameters: {"command_1"=>"refresh", "command_2"=>"refresh", "commit"=>"execute", "command_3"=>"refresh", "authenticity_token"=>"yzYaU4S+K+jyV8JIechvMDLLLwoCh7g/Dn+ZImxWUvg=", "url"=>"http://localhost:3000/orders/13.xml", "command_4"=>"refresh", "command_5"=>"refresh"}
+  [4;36;1mOrder Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Completed in 188ms (View: 1, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 15:24:45) [GET]
+  Parameters: {"1256755981"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:24:49) [POST]
+  Parameters: {"command_1"=>"refresh", "command_2"=>"refresh", "commit"=>"execute", "command_3"=>"refresh", "authenticity_token"=>"yzYaU4S+K+jyV8JIechvMDLLLwoCh7g/Dn+ZImxWUvg=", "url"=>"http://localhost:3000/orders/13.xml", "command_4"=>"refresh", "command_5"=>"refresh"}
+  [4;35;1mOrder Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Completed in 288ms (View: 1, DB: 2) | 200 OK [http://localhost/commands/execute]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 15:24:49) [GET]
+  Parameters: {"1256755981"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:24:59) [POST]
+  Parameters: {"command_1"=>"refresh", "command_2"=>"refresh", "commit"=>"execute", "command_3"=>"refresh", "authenticity_token"=>"yzYaU4S+K+jyV8JIechvMDLLLwoCh7g/Dn+ZImxWUvg=", "url"=>"http://localhost:3000/orders/13.xml", "command_4"=>"refresh", "command_5"=>"refresh"}
+  [4;36;1mOrder Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+Completed in 232ms (View: 1, DB: 1) | 200 OK [http://localhost/commands/execute]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 15:25:00) [GET]
+  Parameters: {"1256755981"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

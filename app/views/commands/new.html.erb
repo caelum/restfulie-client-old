@@ -8,11 +8,7 @@
 	url: <%= text_field_tag 'url' %>
 	<br/>
   commands:<br/> 
-	<%= select_tag "command_1", "<option>refresh</option><option>update</option><option>pay</option><option>destroy</option>" %>
-	<%= select_tag "command_2", "<option>refresh</option><option>update</option><option>pay</option><option>destroy</option>" %>
-	<%= select_tag "command_3", "<option>refresh</option><option>update</option><option>pay</option><option>destroy</option>" %>
-	<%= select_tag "command_4", "<option>refresh</option><option>update</option><option>pay</option><option>destroy</option>" %>
-	<%= select_tag "command_5", "<option>refresh</option><option>update</option><option>pay</option><option>destroy</option>" %>
+	<%= select_tag "command", "<option>refresh</option><option>update</option><option>pay</option><option>destroy</option>" %>
 	
 	<%= submit_tag 'execute' %>
 <% end %>
