@@ -984,3 +984,86 @@ NoMethodError (undefined method `from_xml' for #<Class:0x248c090>):
 Rendered rescues/_trace (28.4ms)
 Rendered rescues/_request_and_response (1.6ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:14:34) [POST]
+  Parameters: {"command_1"=>"refresh", "command_2"=>"refresh", "commit"=>"execute", "command_3"=>"refresh", "authenticity_token"=>"yzYaU4S+K+jyV8JIechvMDLLLwoCh7g/Dn+ZImxWUvg=", "url"=>"http://localhost:3000/orders/13.xml", "command_4"=>"refresh", "command_5"=>"refresh"}
+  [4;36;1mOrder Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+
+NoMethodError (undefined method `refresh' for #<Order:0x25adbf4>):
+  app/controllers/commands_controller.rb:13:in `execute'
+  app/controllers/commands_controller.rb:10:in `each'
+  app/controllers/commands_controller.rb:10:in `execute'
+
+Rendered rescues/_trace (28.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:14:59) [POST]
+  Parameters: {"command_1"=>"refresh", "command_2"=>"refresh", "commit"=>"execute", "command_3"=>"refresh", "authenticity_token"=>"yzYaU4S+K+jyV8JIechvMDLLLwoCh7g/Dn+ZImxWUvg=", "url"=>"http://localhost:3000/orders/13.xml", "command_4"=>"refresh", "command_5"=>"refresh"}
+
+TypeError (can't dup NilClass):
+  app/controllers/commands_controller.rb:8:in `execute'
+
+Rendered rescues/_trace (29.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:15:42) [POST]
+  Parameters: {"command_1"=>"refresh", "command_2"=>"refresh", "commit"=>"execute", "command_3"=>"refresh", "authenticity_token"=>"yzYaU4S+K+jyV8JIechvMDLLLwoCh7g/Dn+ZImxWUvg=", "url"=>"http://localhost:3000/orders/13.xml", "command_4"=>"refresh", "command_5"=>"refresh"}
+
+TypeError (can't dup NilClass):
+  app/controllers/commands_controller.rb:9:in `execute'
+
+Rendered rescues/_trace (26.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:15:53) [POST]
+  Parameters: {"command_1"=>"refresh", "command_2"=>"refresh", "commit"=>"execute", "command_3"=>"refresh", "authenticity_token"=>"yzYaU4S+K+jyV8JIechvMDLLLwoCh7g/Dn+ZImxWUvg=", "url"=>"http://localhost:3000/orders/13.xml", "command_4"=>"refresh", "command_5"=>"refresh"}
+
+TypeError (can't dup NilClass):
+  app/controllers/commands_controller.rb:9:in `execute'
+
+Rendered rescues/_trace (26.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommandsController#execute (for 127.0.0.1 at 2009-10-30 15:16:15) [POST]
+  Parameters: {"command_1"=>"refresh", "command_2"=>"refresh", "commit"=>"execute", "command_3"=>"refresh", "authenticity_token"=>"yzYaU4S+K+jyV8JIechvMDLLLwoCh7g/Dn+ZImxWUvg=", "url"=>"http://localhost:3000/orders/13.xml", "command_4"=>"refresh", "command_5"=>"refresh"}
+  [4;35;1mOrder Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+WARNING: Can't mass-assign these protected attributes: id
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:542:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:379:in `get_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:356:in `get'
+  app/controllers/commands_controller.rb:14:in `execute'
+  app/controllers/commands_controller.rb:11:in `each'
+  app/controllers/commands_controller.rb:11:in `execute'
+
+Rendered rescues/_trace (33.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
