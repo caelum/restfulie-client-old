@@ -15,17 +15,8 @@
 	</p>
 </li>
 
-	<li><h2>Execute something</h2>
-		<p>Fill in the url field and choose an action to execute with your resource.</p>
-	</li>
-</ol>
-
-<% form_tag "/commands/execute" do %>
-	url: <%= text_field_tag 'url', @from_url %>
-	<br/>
-  commands:<br/> 
-
-	<%= select_tag "command", "<option>refresh</option><option>update</option><option>pay</option><option>destroy</option>" %>
+<li><h2>Execute something</h2>
+	<p>Fill in the url field and choose an action to execute with your resource.</p>
 	
 	<p>
 		<% form_tag "/commands/execute" do %>
