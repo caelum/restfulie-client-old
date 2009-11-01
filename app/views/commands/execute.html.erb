@@ -2,11 +2,11 @@
 	<li><h2>And here is the result</h2>
 
 <p>
-	Base url: <%= @from_url%>
+	Base url: <strong><%= @from_url%></strong>
 </p>
 
 <p>
-	Response code: <%= @response.code %>
+	Response code: <strong><%= @response.code %></strong>
 </p>
 
 <p>
@@ -16,7 +16,7 @@
 </li>
 
 <li><h2>Execute something</h2>
-	<p>Fill in the url field and choose an action to execute with your resource.</p>
+	<p>Pick an action to execute so you change (or not) this resource's state.</p>
 	
 	<p>
 		<% form_tag "/commands/execute" do %>
@@ -32,7 +32,7 @@
 	</p>
 </li>
 
-<li><h2>Or try another url</h2>
+<li><h2>Or try another resource</h2>
 	<p>
 		<% form_tag "/commands/show_rels" do %>
 			url: <%= text_field_tag 'url' %>
