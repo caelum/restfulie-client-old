@@ -89,11 +89,28 @@ module ActiveRecord
       result
     end
 
+    def self.from_web(uri)
+      url = URI.parse(uri)
+      req = Net::HTTP::Get.new(url.path)
+      http = Net::HTTP.new(url.host, url.port)
+      res = http.request(req)
+      raise :invalid_request, res if res.code != 200
+      case res.content_type
+      when "application/xml"
+        self.from_xml res.body
+      when "application/json"
+        self.from_json res.body
+      else
+        raise :unknown_content_type
+      end
+    end
+
     # basic code from Matt Pulver
     # found at http://www.xcombinator.com/2008/07/06/activerecord-from_json-and-from_xml/
     # addapted to support links
     def self.from_hash( hash )
-      h = hash.dup
+      h = {}
+      h = hash.dup if hash
       links = nil
       h.each do |key,value|
           case value.class.to_s
@@ -116,6 +133,7 @@ module ActiveRecord
       end
       result = self.new h
       add_states(result, links) unless links.nil?
+      result
     end
 
     def self.from_json( json )
@@ -127,7 +145,9 @@ module ActiveRecord
     # but the hash has no counterpart (e.g. 'ship_to' => {} )
     def self.from_xml( xml )
       hash = Hash.from_xml xml
-      result = self.from_hash hash[self.to_s.underscore]
+      head = hash[self.to_s.underscore]
+      result = self.from_hash head
+      return nil if result.nil?
       result._came_from = :xml
       result
     end
