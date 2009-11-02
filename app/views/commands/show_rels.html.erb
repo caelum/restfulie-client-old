@@ -4,19 +4,28 @@
 			<pre><%= h @xml %></pre>
 			</p>
 	</li>
-	<li><h2>Execute something</h2>
-		<p>Choose an action.</p>
+	<% form_tag "/commands/execute" do %>
+	<%= hidden_field_tag 'url', @from_url %>
+	<li><h2>Choose an action</h2>
+		<p>Prepare to execute an action with your resource:</p>
 		<p>
-			<% form_tag "/commands/execute" do %>
-				<%= hidden_field_tag 'url', @from_url %>
-				commands: 
 				<select name="command">
 					<% @possible_states.each do |state| %>
 						<option value=<%= state %> ><%= state %></option>
 					<% end %>
-				</select>
-				<%= submit_tag 'execute' %>
-			<% end %>
+				</select><br/>
 		</p>
 	</li>
+	<li><h2>Add an optional parameter to your request</h2>
+		<p>
+			Name: <input name="parameter_name" value="" /><br/>
+			Content: <textarea name="parameter_value" style="width: 400px; height: 100px;"></textarea>
+		</p>
+	</li>
+	<li><h2>Execute it</h2>
+		<p>
+			<%= submit_tag 'execute' %>
+		</p>
+	</li>
+	<% end %>
 </ol>

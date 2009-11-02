@@ -16,7 +16,9 @@ class CommandsController < ApplicationController
     @from_url = params['url']
     # example on how to read it straight from the web!!!
     order = Order.from_web @from_url
-    @response = order.send(params["command"])
+    name = params['parameter_name']
+    value = params['parameter_value']
+    @response = order.send(params["command"], { :data => {name => value } })
 
     # refreshes it
     order = Order.from_web @from_url
