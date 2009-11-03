@@ -18,7 +18,11 @@ class CommandsController < ApplicationController
     order = Order.from_web @from_url
     name = params['parameter_name']
     value = params['parameter_value']
-    @response = order.send(params["command"], { :data => {name => value } })
+    
+    # dynamic invoke
+    @response = order.send(params["command"], { :data => {name => value } }, { |response|
+      response
+    })
 
     # refreshes it
     order = Order.from_web @from_url
