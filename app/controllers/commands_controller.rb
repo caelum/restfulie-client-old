@@ -14,13 +14,16 @@ class CommandsController < ApplicationController
   def execute
     
     @from_url = params['url']
-    # example on how to read it straight from the web!!!
-    order = Order.from_web @from_url
-    name = params['parameter_name']
+    
+    order = Order.from_web @from_url # example on how to read it straight from the web!!!
     value = params['parameter_value']
     
+    options = {}
+    options [:data] = value if value
+    puts "Options are #{options[:data]}"
+    
     # dynamic invoke
-    @response = order.send(params["command"], { :data => {name => value } }) do |response|
+    @response = order.send(params["command"], options ) do |response|
       response
     end
 
