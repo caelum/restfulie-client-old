@@ -20,7 +20,6 @@ class CommandsController < ApplicationController
     
     options = {}
     options [:data] = value if value
-    puts "Options are #{options[:data]}"
     
     # dynamic invoke
     @response = order.send(params["command"], options ) do |response|
